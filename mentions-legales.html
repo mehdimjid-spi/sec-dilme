@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mentions légales — Dilmé & Associés</title>
+<meta name="description" content="Mentions légales du site Dilmé & Associés, cabinet d'expertise comptable à Cabestany." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#071827;
+  --navy-deep:#050F1B;
+  --gold:#C6A46A;
+  --bone:#F7F4EF;
+  --text:#1F2933;
+  --muted:#52606D;
+  --line-gold:rgba(198,164,106,.28);
+  --line-light:rgba(247,244,239,.12);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:var(--sans);
+  background:var(--bone);
+  color:var(--text);
+  line-height:1.75;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  max-width:980px;
+  margin:auto;
+  padding:0 40px;
+}
+
+header{
+  background:var(--navy);
+  color:var(--bone);
+  border-bottom:1px solid var(--line-gold);
+}
+
+.header-inner{
+  min-height:96px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.brand-mark{
+  width:118px;
+  height:70px;
+  background:url('assets/logo-mark.png') center/contain no-repeat;
+  filter:drop-shadow(0 12px 22px rgba(0,0,0,.28));
+}
+
+.brand-text{
+  font-family:var(--serif);
+  font-size:1.28rem;
+  color:var(--bone);
+  line-height:1;
+}
+
+.brand-text small{
+  display:block;
+  font-family:var(--sans);
+  font-size:9px;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-top:6px;
+}
+
+.back-link{
+  border:1px solid var(--gold);
+  color:var(--gold);
+  padding:12px 20px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  transition:.3s ease;
+}
+
+.back-link:hover{
+  background:var(--gold);
+  color:var(--navy);
+}
+
+main{
+  padding:95px 0 110px;
+}
+
+.eyebrow{
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+}
+
+.eyebrow:before,
+.eyebrow:after{
+  content:"";
+  width:34px;
+  height:1px;
+  background:var(--gold);
+}
+
+.section-head{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+h1,h2,h3{
+  font-family:var(--serif);
+  font-weight:400;
+  line-height:1.12;
+  color:var(--navy);
+}
+
+h1{
+  font-size:clamp(2.7rem,6vw,4.6rem);
+  margin-top:24px;
+}
+
+.it{
+  font-style:italic;
+  color:var(--gold);
+}
+
+.legal-content{
+  border:1px solid var(--line-gold);
+  background:rgba(255,255,255,.28);
+  padding:54px;
+}
+
+.legal-content h2{
+  font-size:2.25rem;
+  margin-top:44px;
+  margin-bottom:14px;
+}
+
+.legal-content h2:first-child{
+  margin-top:0;
+}
+
+.legal-content p{
+  margin-bottom:18px;
+  color:#3e4b58;
+}
+
+.legal-content strong{
+  color:var(--navy);
+  font-weight:600;
+}
+
+.legal-content a{
+  color:var(--gold);
+}
+
+.legal-content a:hover{
+  text-decoration:underline;
+}
+
+.note{
+  border-left:1px solid var(--gold);
+  padding-left:22px;
+  margin-top:34px;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+footer{
+  background:var(--navy-deep);
+  color:rgba(247,244,239,.66);
+  padding:32px 0;
+  border-top:1px solid var(--line-light);
+  font-size:12px;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.footer-inner a{
+  color:var(--gold);
+}
+
+@media(max-width:780px){
+  .container{
+    padding:0 24px;
+  }
+
+  .header-inner{
+    min-height:82px;
+  }
+
+  .brand-mark{
+    width:86px;
+    height:52px;
+  }
+
+  .brand-text{
+    font-size:1.05rem;
+  }
+
+  .back-link{
+    padding:10px 14px;
+    font-size:10px;
+  }
+
+  main{
+    padding:72px 0 82px;
+  }
+
+  .section-head{
+    margin-bottom:46px;
+  }
+
+  .legal-content{
+    padding:32px 24px;
+  }
+
+  .legal-content h2{
+    font-size:1.75rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Retour à l'accueil Dilmé & Associés">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Dilmé & Associés<small>Expertise Comptable</small></span>
+    </a>
+
+    <a class="back-link" href="index.html">Retour au site</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Informations légales</div>
+      <h1>Mentions <span class="it">légales</span></h1>
+    </div>
+
+    <div class="legal-content">
+      <h2>Éditeur du site</h2>
+      <p>
+        Le présent site est édité par la <strong>SOCIÉTÉ D’EXPERTISE COMPTABLE DILMÉ ASSOCIÉS</strong>,
+        cabinet d’expertise comptable inscrit à l’Ordre des Experts-Comptables.
+      </p>
+      <p>
+        Forme juridique : Société à responsabilité limitée<br>
+        Capital social : 400 000 €<br>
+        SIREN : 384 844 031<br>
+        SIRET du siège social : 384 844 031 00029<br>
+        RCS : Perpignan<br>
+        Numéro de TVA intracommunautaire : FR81384844031<br>
+        Code APE / NAF : 6920Z — Activités comptables
+      </p>
+
+      <h2>Siège social</h2>
+      <p>
+        SOCIÉTÉ D’EXPERTISE COMPTABLE DILMÉ ASSOCIÉS<br>
+        7 rue Maurice de Broglie<br>
+        66330 Cabestany<br>
+        France
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Téléphone : <a href="tel:+33468670636">04 68 67 06 36</a><br>
+        Email : <a href="mailto:contact@cabinet-dilme.fr">contact@cabinet-dilme.fr</a>
+      </p>
+
+      <h2>Directeur de la publication</h2>
+      <p>
+        Le directeur de la publication est Monsieur <strong>Cosme Dilmé</strong>,
+        en sa qualité de représentant légal de la société.
+      </p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Le site est hébergé par Netlify, Inc.<br>
+        101 2nd Street<br>
+        San Francisco, CA 94105<br>
+        États-Unis<br>
+        Site internet : <a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a>
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L’ensemble des contenus présents sur ce site, notamment les textes, images,
+        graphismes, logo, éléments visuels, structure et mise en page, est protégé par
+        le droit de la propriété intellectuelle. Toute reproduction, représentation,
+        modification, publication ou adaptation, totale ou partielle, est interdite
+        sans autorisation écrite préalable.
+      </p>
+
+      <h2>Données personnelles</h2>
+      <p>
+        Les informations transmises via le formulaire de contact sont utilisées
+        uniquement afin de répondre aux demandes adressées au cabinet.
+        Les données collectées peuvent inclure le nom, le prénom, l’adresse email,
+        le numéro de téléphone, la société, l’objet de la demande et le message envoyé.
+      </p>
+      <p>
+        Ces données sont destinées exclusivement à la SOCIÉTÉ D’EXPERTISE COMPTABLE
+        DILMÉ ASSOCIÉS et ne sont pas cédées à des tiers. Elles sont conservées pendant
+        la durée nécessaire au traitement de la demande, sauf obligation légale contraire.
+      </p>
+      <p>
+        Conformément à la réglementation applicable en matière de protection des données
+        personnelles, vous pouvez demander l’accès, la rectification ou la suppression
+        de vos données en contactant le cabinet à l’adresse suivante :
+        <a href="mailto:contact@cabinet-dilme.fr">contact@cabinet-dilme.fr</a>.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        Ce site peut utiliser des cookies nécessaires à son bon fonctionnement ou à
+        l’amélioration de l’expérience utilisateur. Vous pouvez configurer votre navigateur
+        pour refuser les cookies ou être informé lorsqu’un cookie est déposé.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© Dilmé & Associés — Tous droits réservés.</span>
+    <span><a href="index.html">Retour au site</a></span>
+  </div>
+</footer>
+</body>
+</html>
